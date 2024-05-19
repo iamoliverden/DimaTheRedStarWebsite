@@ -1,0 +1,16 @@
+<!--contact.html-->
+{% extends "DimaRedStar/base.html" %}
+
+{% block content %}
+<div class="contact-form">
+    <h1>Contact Dima The Red Star</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+{% endblock %}
