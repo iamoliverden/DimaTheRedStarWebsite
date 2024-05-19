@@ -2,31 +2,118 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#menu {
+.header {
+    background-color: #333;
+    width: 100%;
+    padding: 0px 0;
+    margin: 0;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    margin: 0;
+}
+
+.inner-header .logo-container {
+    color: #FFD700;
+    font-weight: bold;
+    order: 2;
+    margin: 0;
+}
+
+.inner-header .navigation {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    display: flex;
+    order: 1;
 }
 
-#menu li {
-    float: left;
-}
-
-#menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.inner-header .navigation a {
+    color: #FFD700;
     text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    margin: 0;
 }
 
-#menu li a:hover {
+.inner-header .navigation a:hover {
     background-color: #111;
 }
 
-#hero-image {
-    width: 100%;
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-image-container {
+    flex: 1;
+    text-align: center;
+    padding: 100px;
+}
+
+.hero-image {
+    max-width: 90%;
     height: auto;
+    margin: auto;
+}
+
+.site-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1.5;
+    padding: 0 20px;
+    margin-right: 50px;
+}
+
+.hero-bio {
+    padding: 30px;
+}
+
+.contact-form label {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+.contact-form {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #111;
 }

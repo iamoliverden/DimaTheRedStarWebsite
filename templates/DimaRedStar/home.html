@@ -1,0 +1,18 @@
+<!--home.html-->
+{% extends "DimaRedStar/index.html" %}
+{% load static %}
+
+{% block content %}
+<div class="main-content">
+    <div class="hero-image-container">
+        <img src="{% static 'image/_e89850f4-84e0-450e-ac95-4748810d7ab3.jpg' %}" alt="Dima 'Red Star'" class="hero-image">
+    </div>
+    <div class="site-description" id="site-description">
+        <div style="text-align: justify; line-height: 1.6;">
+        {{ home|safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
